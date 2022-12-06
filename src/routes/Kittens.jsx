@@ -5,7 +5,7 @@ import React from 'react';
 const Kittens = () => {
   return (
     <section className="flex justify-center mx-auto px-8">
-      <div className="flex flex-wrap flex-col sm:flex-row gap-y-10 gap-x-4 mt-6 mx-auto max-w-6xl">
+      <div className="flex flex-wrap flex-col sm:flex-row gap-y-10 gap-x-4 mt-6 mx-auto max-w-5xl">
         {kittens.map((kitten) => {
           return (
             <Link to={`/kittens/${kitten.id}`}>

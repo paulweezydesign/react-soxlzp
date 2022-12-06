@@ -18,7 +18,12 @@ const Navbar = () => {
         <NavLink to="/resources">Resources</NavLink>
       </div>
       <div className="hidden md:flex md:justify-end">
-        <NavLink to="/contact">Contact us</NavLink>
+        <NavLink
+          className="btn bg-[deeppink] border-[deeppink] hover:border-[hotpink] hover:bg-[hotpink] hover:text-white"
+          to="/contact"
+        >
+          Contact us
+        </NavLink>
       </div>
       <div className="flex justify-end md:hidden">
         <button onClick={openSidebar} className="sidebar-toggle">
