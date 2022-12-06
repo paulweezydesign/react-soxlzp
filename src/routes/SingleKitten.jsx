@@ -10,8 +10,15 @@ const SingleKitten = () => {
     <section className="container mx-auto ">
       <img className="w-[800px] h-[400px] mx-auto" lsrc={image2} alt={name} />
       <h5 className="text-5xl font-black">{name}</h5>
-      <Link to="/kittens">back to kittens</Link>
-      <Link to="/contact">Contact us</Link>
+      <Link className="btn" to="/kittens">
+        back to kittens
+      </Link>
+      <Link
+        className="btn bg-[deeppink] border-[deeppink] hover:bg-[hotpink] hover:border-[hotpink] hover:text-white"
+        to="/contact"
+      >
+        Contact us
+      </Link>
     </section>
   );
 };
